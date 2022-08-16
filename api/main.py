@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-
+from utils.database_manager import get_sheet
 app = FastAPI()
 
 
@@ -8,6 +8,7 @@ async def root():
     return {"message": "Hello World"}
 
 
-@app.get("/hello/{name}")
-async def say_hello(name: str):
-    return {"message": f"Hello {name}"}
+@app.get("/cheats/{language}")
+async def say_hello(language: int):
+
+    return {"sheet": get_sheet(language)}
