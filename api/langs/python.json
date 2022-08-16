@@ -1,0 +1,16 @@
+{
+  "name": "Python",
+  "desc": "Python cheat sheet",
+  "tips": [
+    {
+      "name": "Use split",
+      "desc": "KKOOOO",
+      "code": "str.split(' ');"
+    },
+    {
+      "name": "Use []",
+      "desc": "Str as array",
+      "code": "str[0]"
+    }
+  ]
+}
